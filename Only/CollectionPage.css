@@ -1,0 +1,196 @@
+.Nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:black;
+	position:relative;
+	right:790px;
+}
+
+.NavItems{
+	float:left;
+}
+
+.NavItems a{
+	display:block;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-family:arial;
+	font-size:28pt;
+	padding:10px;
+	margin-right:20px;
+	margin-left:10px;
+}
+
+.NavItems a:hover{
+	background-color:orange;
+}
+
+.Active{
+	background-color:orange;
+}
+
+h1{
+	font-family:arial;
+	position:relative;
+	left:790px;
+	bottom:90px;
+}
+
+h2{
+	font-family:arial;
+	font-size:15pt;
+	position:relative;
+	bottom:440px;
+	left:230px;
+	
+}
+
+.CatCon{
+	border:1px solid gray;
+	width:160px;
+	position:relative;
+	right:790px;
+	top:20px;
+	padding-left:40px;
+}
+
+.Categories{
+	font-family:arial;
+	font-size:18pt;
+}
+
+p{
+	font-family:arial;
+	font-size:16pt;
+}
+/*
+.Img1{
+	position:relative;
+	bottom:450px;
+	right:260px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img2{
+	position:relative;
+	bottom:450px;
+	right:390px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img3{
+	position:relative;
+	bottom:450px;
+	left:300px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img4{
+	position:relative;
+	bottom:450px;
+	left:830px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img5{
+	position:relative;
+	bottom:420px;
+	right:420px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img6{
+	position:relative;
+	bottom:420px;
+	right:55px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img7{
+	position:relative;
+	bottom:420px;
+	left:470px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img8{
+	position:relative;
+	bottom:255px;
+	left:665px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img9{
+	position:relative;
+	bottom:220px;
+	left:240px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img10{
+	position:relative;
+	bottom:220px;
+	left:110px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img11{
+	position:relative;
+	bottom:385px;
+	left:635px;
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+}
+
+.Img12{
+	position:relative;
+																									
+}
+*/
+
+
+.Img10{
+	border-style:solid;
+	border-color:gray;
+	border-width:1px;
+	float:left;
+	position:relative;
+	bottom:420px;
+	left:230px;
+	margin-top:30px;
+}
+
+.Left{
+	margin-right:30px;
+}
+
+
+
+
+
+
+

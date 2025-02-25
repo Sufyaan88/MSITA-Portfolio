@@ -1,0 +1,1260 @@
+* {
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+body {
+	overflow-x: hidden;
+    margin: 0;
+    background-size: cover;
+	background-attachment: fixed;
+    background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+    );
+}
+
+.MaxW{
+	max-width:1366px;
+	margin:auto;
+}
+
+pre{
+	white-space:pre-wrap;
+	padding:10px;
+}
+
+img{
+	max-width:100%;
+	//object-fit: contain;
+}
+/*-------------------------------------------------- Css for Header -------------------------------------------------------------*/
+
+.logo{
+	width:6rem;
+}
+
+.header{
+	display:flex;
+	justify-content:space-between;
+	position:fixed;
+	width: 100%;
+	z-index:1;
+	font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2rem;
+}
+
+li{
+	display:inline;
+	padding:1rem;
+}
+
+li a{
+	color:black;
+	text-decoration:none;
+}
+
+.Active{
+	text-decoration: underline;
+}
+
+/*-------------------------------------------------- Css for Footer -------------------------------------------------------------*/
+
+/*---------------------Footer for contact me----------------*/
+.Footer1{
+	background-color: black;
+	width: 100%;
+	height: 5rem;
+	position:absolute;
+	bottom:0;
+}
+
+/*---------------------Main Footer----------------*/
+.Footer2{
+	background-color: black;
+	width: 100%;
+	height: 5rem;
+}
+
+.white{
+	color:white;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-size:1em;
+	padding-top:0.8em;
+	margin-left:15em;
+}
+
+.FloatR{
+	margin-left:15em;
+}
+
+.Floatbtn{
+	background-color: transparent;
+	border:none;
+	color:white;
+	cursor:pointer;
+	font-size:3em;
+	transform: rotate(270deg);
+}
+
+/*-------------------------------------------------- Css for Scrollbar -------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+    ); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,0.7) 0%, 
+        rgba(87,111,230,0.7) 25%, 
+        rgba(152,68,183,0.7) 51%, 
+        rgba(255,53,127,0.7) 100%
+    ); 
+}
+
+/*-------------------------------------------------- Css for Home -------------------------------------------------------------*/
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Pos {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Pos1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inline{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes anim {
+  100% {transform: scale(3) translateX(40%)};
+}
+
+@keyframes anim1 {
+  100% {transform: scale(3) translateX(40%)};
+}
+
+@keyframes anim2 {
+  100% {transform: translateX(600%) rotateY(180deg) scale(3)};
+}
+
+@keyframes anim3 {
+  100% {transform: translateX(-500%) rotateY(180deg) scale(3)};
+}
+
+@keyframes anim4 {
+  100% {transform: translateY(50%) scale(3); opacity: 1};
+}
+
+@keyframes anim5 {
+  100% {transform: translateX(-100%) scale(3); opacity: 1};
+}
+
+@keyframes anim6 {
+  100% {transform: translateX(100%) scale(3); opacity: 1};
+}
+
+@keyframes anim7 {
+  100% {transform: translate(-80%, 0) scale(3); opacity: 1};
+}
+
+@keyframes anim8 {
+  100% {transform: translate(200%, 0) scale(3); opacity: 1};
+}
+
+.HAnim{
+	font-size: 4em;
+	transform: scale(0) translateX(-10%);
+}
+
+.HAnim1{
+	font-size: 4em;
+	transform: scale(0) translateX(100%);
+}
+
+.HAnim2{
+	font-size: 4em;
+	transform: translateX(0);
+}
+
+
+.HAnim3{
+	font-size: 4em;
+	transform: translateX(0);
+}
+
+.HAnim4{
+	padding:1em;
+	font-size: 4em;
+	opacity:0;
+	transform: translateY(-100%);
+}
+
+.HAnim5{
+	font-size: 4em;
+	opacity:0;
+	transform: translateX(-500%) scale(3);
+}
+
+.HAnim6{
+	font-size: 4em;
+	opacity:0;
+	transform: translateX(500%) scale(3);
+}
+
+.HAnim7{
+	font-size: 4em;
+	opacity:0;
+	transform: translate(-80%, 200%) scale(3);
+	//animation: anim7 2s infinite;
+}
+
+.HAnim8{
+	font-size: 4em;
+	opacity:0;
+	transform: translate(200%, -200%) scale(3);
+	//animation: anim8 2s infinite;
+}
+
+.WhatIDo{
+	transform:scale(3);
+}
+
+.PadB{
+	padding-right: 1000px;
+}
+
+.PadD{
+	padding-right: 800px;
+}
+
+.PadD2{
+	padding-right: 380px;
+}
+
+.PadP{
+	padding-left: 200px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter1 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  border-color: transparent;
+  animation: 
+    typing 1s steps(6, end),
+    blink-caret .75s step-end;
+}
+
+.typewriter2 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  visibility:hidden;
+  //border-color: transparent;
+  animation: 
+    typing 1.5s steps(21, end) 1s forwards,
+    blink-caret .75s step-end 3 forwards;
+}
+
+.typewriter3 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  visibility:hidden;
+  border-color: transparent;
+  animation: 
+    typing 2.5s steps(35, end) 2.5s forwards,
+    blink-caret .75s step-end 7 forwards;
+}
+
+.typewriter4 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  visibility:hidden;
+  border-color: transparent;
+  animation: 
+    typing 2.5s steps(30, end) 5s forwards,
+    blink-caret .75s step-end 10 forwards;
+}
+
+.typewriter5 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  visibility:hidden;
+  border-color: transparent;
+  animation: 
+    typing 1s steps(6, end) 7.5s forwards,
+    blink-caret .75s step-end 12 forwards;
+}
+
+.typewriter6 p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-size: 2em;
+  visibility:hidden;
+  animation: 
+    typing 1s steps(7, end) 9s forwards,
+    blink-caret .75s step-end infinite forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; visibility:hidden; }
+  to { width: 100%; visibility:visible;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/*-------------------------------------------------- Css for My Work -------------------------------------------------------------*/
+
+.WHeader{
+	display: flex;
+	justify-content: center;
+	font-size: 4em;
+}
+
+.WBlock{
+	display: flex;
+}
+
+.WDetails{
+	width:50%;
+	padding:1rem;
+	display:flex;
+	flex-direction: column;
+	//justify-content: center;
+	//align-items: center;
+	flex: 1 1 50%;
+	opacity: 0;
+	transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.from-left{
+	transform: translateX(-50%);
+	font-size: 1.5em;
+}
+
+.from-right{
+	transform: translateX(50%);
+	font-size: 1.5em;
+}
+
+.WDetails.Appear{
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.WImg{
+	width:50%;
+	display:flex;
+	flex: 3 3 50%;
+}
+
+.Code{
+	overflow:auto;
+	height:300px;
+}
+/*--------------------------------------flip card------------------------------------------------------*/
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+  
+  --clr: #b7c9e5;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  width: 100%;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
+}
+
+.card__front, .card__front1, .card__front2, .card__front3, .card__front4, .card__front5, .card__front6, .card__front7, .card__front8, .card__front9,
+.card__front10, .card__front11, .card__front12, .card__front13, .card__front14, .card__front15, .card__front16, .card__front17, .card__front18, .card__front19,
+.card__front20, .card__front21, .card__front22, .card__front23, .card__front24, .card__front25, .card__front26, .card__front27, .card__front28,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: var(--clr);
+  background-image: url(Images/DigitalArt/DigitalCollage.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front1 {
+  background-color: var(--clr);
+  background-image: url(Images/DigitalArt/HauntedHouse.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front2 {
+  background-color: var(--clr);
+  background-image: url(Images/DigitalArt/Fist.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front3 {
+  background-color: var(--clr);
+  background-image: url(Images/DigitalArt/Skull.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front4 {
+  background-color: var(--clr);
+  background-image: url(Images/DigitalArt/SkullSpider.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front5 {
+  background-color: var(--clr);
+  background-image: url(Images/Edits/Edit1.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front6 {
+  background-color: var(--clr);
+  background-image: url(Images/Edits/Edit2.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front7 {
+  background-color: var(--clr);
+  background-image: url(Images/Edits/Edit3.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front8 {
+  background-color: var(--clr);
+  background-image: url(Images/Edits/Edit4.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front9 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/SpookiesLogo1.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front10 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/SpookiesLogo2.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front11 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/SpookiesLogo3.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front12 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/NaconLogo1.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front13 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/NaconLogo2.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front14 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/NaconLogo3.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front15 {
+  background-color: var(--clr);
+  background-image: url(Images/Design/SpookiesGhost.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front16 {
+  background-color: var(--clr);
+  background-image: url(Images/Design/SpookiesPacket1.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front17 {
+  background-color: var(--clr);
+  background-image: url(Images/Design/SpookiesPacket2.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front18 {
+  background-color: var(--clr);
+  background-image: url(Images/Design/NaconCard.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front19 {
+  background-color: var(--clr);
+  background-image: url(Images/Design/NaconAdvert.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front20 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/Mockup1.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front21 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/SpookiesHomeMockUp.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front22 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/UrbanTonic.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front23 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/Only.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front24 {
+  background-color: var(--clr);
+  background-image: url(Images/Logos/SunEcoTravelLogo.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front25 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/SunEcoTravelHomePageMockup.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front26 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/AirlineHomePage.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front27 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/OnlineBusiness.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front28 {
+  background-color: var(--clr);
+  background-image: url(Images/Websites/Cinema.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front1::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front2::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front3::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front4::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front5::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front6::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front7::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front8::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front9::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front10::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front11::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front12::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front13::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front14::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front15::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front16::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front17::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front18::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front19::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front20::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front21::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front22::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front23::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front24::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front25::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front26::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front27::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__front28::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  opacity: .7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+  color: var(--clr);
+  background: #333;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.btnClick{
+	background-color: transparent;
+	border: 5px solid var(--clr);
+	cursor: pointer;
+	width:50%;
+	margin:auto;
+}
+
+.btnClick a{
+	color: var(--clr);
+	text-decoration: none;
+}
+
+.btnView{
+	background-color: transparent;
+	border: 5px solid var(--clr);
+	cursor: pointer;
+	width:50%;
+	margin:auto;
+}
+
+.btnView a{
+	color: var(--clr);
+	text-decoration: none;
+}
+
+/*----------Fade In-------------*/
+
+@keyframes SlideRight {
+	0% {opacity: 0; translateX: 0px;};
+	100% {opacity: 1; translateX: 100px;};
+}
+
+/*--------------------------------------------------------Code Tabs-----------------------------------------------------------------------*/
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width:90%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  overflow:auto;
+  height:10em;
+  width:90%;
+  background-color:#f1f1f1;
+  font-size: 0.6em;
+}
+
+/*-------------------------------------------------- Css for About Me -------------------------------------------------------------*/
+
+.AboutMe{
+	padding: 0 100px;
+	font-size:2rem;
+}
+
+.AboutContent{
+	display: flex;
+	flex-direction: column;
+	padding:0 100px;
+}
+
+.Content{
+	font-size:1.5em;
+	padding: 1rem;
+}
+
+.Skills{
+	padding:0 100px;
+	font-size:1.5em;
+}
+
+.icons{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.icons1{
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem;
+}
+
+.label{
+	font-size:2rem;
+}
+
+/*-------------------------------------------------- Css for Contact Me -------------------------------------------------------------*/
+
+.Contact{
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+.Contact1{
+	padding:0 100px;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.CIcons{
+	display: flex;
+	justify-content: space-around;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 40%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

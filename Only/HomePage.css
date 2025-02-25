@@ -1,0 +1,63 @@
+h1{
+	font-family:arial;
+	position:relative;
+	left:790px;
+	bottom:90px;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:black;
+	position:relative;
+	right:790px;
+}
+
+li{
+	float:left;
+}
+
+li a{
+	display:block;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	font-family:arial;
+	font-size:28pt;
+	padding:10px;
+	margin-right:20px;
+	margin-left:10px;
+}
+
+li a:hover{
+	background-color:orange;
+}
+
+#Banner{
+	position:relative;
+	right:790px;
+	top:20px;
+}
+
+h2{
+	font-family:arial;
+	font-size:33pt;
+	float:left;
+	position:relative;
+	bottom:120px;
+}
+
+.Content{
+	position:relative;
+	bottom:140px;
+}
+
+p{
+	font-family:arial;
+	font-size:10pt;
+	float:left;
+	position:relative;
+	bottom:140px;
+}
